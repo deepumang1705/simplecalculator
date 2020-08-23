@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html><!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+<head>
+	<title>Calculation</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="math.css">
+</head>
+<body>
+	<div class="container">
+	<div class="card text-center my-5 border-secondary">
+		<div class="container">
+	  <div class="card-header border-secondary">
+	  	<h1>Your simple math calculator is here.</h1>
+	  </div>
+	  <div class="card-body mx-10">
+	    <div class="no-result" id="res">_</div>
+	    <div class="container">
+		  <div class="row">
+		    <div class="col">
+		    	<div class="form-group">
+			    <input type="number" class="form-control" id="input1">
+			  </div>
+		    </div>
+		    <div class="col">
+		    	<div class="form-group">
+			    <input type="number" class="form-control" id="input2">
+			  </div>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col">
+		      <button class="btn btn-primary w-100 my-2" type="button" onclick="add()">+</button>
+		    </div>
+		    <div class="col">
+				<button class="btn btn-secondary w-100 my-2" type="button" onclick="sub()">-</button>
+		    </div>
+		    <div class="col">
+		      <button class="btn btn-success w-100 my-2" type="button" onclick="div()">/</button>
+		    </div>
+		    <div class="col">
+				<button class="btn btn-danger w-100 my-2" type="button" onclick="mul()">x</button>
+		    </div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	</div>
+	</div>
+<script>
+	function add() {
+	var x = document.getElementById("input1").value;
+	var y = document.getElementById("input2").value;
+	document.getElementById("res").innerHTML = parseInt(x) + parseInt(y);
+}
+	function sub() {
+	var x = document.getElementById("input1").value;
+	var y = document.getElementById("input2").value;
+	document.getElementById("res").innerHTML = parseInt(x) - parseInt(y);
+}
+	function div() {
+	var x = document.getElementById("input1").value;
+	var y = document.getElementById("input2").value;
+	document.getElementById("res").innerHTML = parseInt(x) / parseInt(y);
+}
+	function mul() {
+	var x = document.getElementById("input1").value;
+	var y = document.getElementById("input2").value;
+	document.getElementById("res").innerHTML = parseInt(x) * parseInt(y);
+}		
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
